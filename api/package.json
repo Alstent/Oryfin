@@ -1,0 +1,26 @@
+{
+  "name": "oryfin-api",
+  "version": "0.1.0",
+  "author": "alstent",
+  "license": "ISC",
+  "description": "Backend API for Oryfin financial app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "finance",
+    "api",
+    "backend"
+  ],
+  "dependencies": {
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

@@ -2,6 +2,8 @@
   "name": "oryfin-web",
   "private": true,
   "version": "0.1.0",
+  "author": "alstent",
+  "license": "ISC",
   "type": "module",
   "scripts": {
   "start": "vite",
