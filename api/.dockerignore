@@ -1,0 +1,19 @@
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Docker
+Dockerfile
+docker-compose*.yml
+
+# Env
+.env
+.env.*
+
+# VSCode / IDEs
+.vscode
+.idea
+
+# Sistema
+.DS_Store

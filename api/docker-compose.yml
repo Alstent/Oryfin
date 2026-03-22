@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: oryfin_postgres_${NODE_ENV}
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - oryfin_postgres_${NODE_ENV}:/var/lib/postgresql/data
+
+volumes:
+  oryfin_postgres_development:
+  # oryfin_postgres_test:
+  # oryfin_postgres_production:
